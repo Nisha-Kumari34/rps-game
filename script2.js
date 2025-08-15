@@ -29,7 +29,7 @@ const showWinner = (userWin,userChoice,compChoice)=>{
         compScore++;
         compScorePara.innerText=compScore;
         console.log("you lost!");
-        msg.innerText=`you lost! your ${compChoice} beats ${userChoice}`;
+        msg.innerText=`you lost! ${compChoice} beats your ${userChoice}`;
         msg.style.backgroundColor="red";
         }
 };
@@ -65,3 +65,4 @@ choices.forEach((choice)=>{
     playGame(userChoice);
     });
 });
+
